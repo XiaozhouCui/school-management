@@ -12,8 +12,11 @@
 - Import the lesson resolver into _lesson.module.ts_
 - You can start the project by entering `npm start`
 
-## Database: TypeORM, MongoDB and Lesson Entity
+## Connect to database: TypeORM, MongoDB and Lesson Entity
 
 - Install dependencies: `npm i typeorm @nestjs/typeorm mongodb @types/mongodb`
 - With TypeORM and @types/mongodb, we can work with mongodb using TypeScript
-- Import TypeOrmModule into _app.module.ts_, and connect to mongodb
+- Import TypeOrmModule into _app.module.ts_
+- Use `TypeOrmModule.forRoot({...})` to connect to mongodb from _app.module.ts_
+- Add TypeORM Entity class _lesson.entity.ts_, make sure mongo ID `_id` is included
+- In _app.module.ts_, add Lesson entity to the `entities` array inside `TypeOrmModule.forRoot({...})`

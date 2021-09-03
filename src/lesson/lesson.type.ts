@@ -1,6 +1,6 @@
 import { Field, ID, ObjectType } from '@nestjs/graphql';
 
-// this class is a GraphQL type (only used for gql resolver), NOT the TypeORM entity class
+// this class is a GraphQL type (only used for gql resolver), NOT a TypeORM entity class
 
 @ObjectType('Lesson')
 export class LessonType {
