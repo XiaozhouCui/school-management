@@ -20,3 +20,10 @@
 - Use `TypeOrmModule.forRoot({...})` to connect to mongodb from _app.module.ts_
 - Add TypeORM Entity class _lesson.entity.ts_, make sure mongo ID `_id` is included
 - In _app.module.ts_, add Lesson entity to the `entities` array inside `TypeOrmModule.forRoot({...})`
+
+## LessonService and createLesson method
+
+- DO NOT write core logics in a resolver/controller, instead create a service for core logics
+- Generate lesson service `nest g service lesson --no-spec`
+- In lesson service, inject Lesson repository, and add `createLesson()` method
+- In _lesson.module.ts_, import `TypeOrmModule.forFeature([Lesson])`

@@ -1,6 +1,7 @@
 import { Column, Entity, ObjectIdColumn, PrimaryColumn } from 'typeorm';
 
-// this is the entity classed for database
+// this is the entity class for database
+// entity class is also a Repository?
 
 @Entity()
 export class Lesson {
