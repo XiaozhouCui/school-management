@@ -10,3 +10,10 @@
 - Creaate _lesson.type.ts_ and add GQL types
 - Create _lesson.resolver.ts_ and add a GraphQL-Query `lesson()`
 - Import the lesson resolver into _lesson.module.ts_
+- You can start the project by entering `npm start`
+
+## Database: TypeORM, MongoDB and Lesson Entity
+
+- Install dependencies: `npm i typeorm @nestjs/typeorm mongodb @types/mongodb`
+- With TypeORM and @types/mongodb, we can work with mongodb using TypeScript
+- Import TypeOrmModule into _app.module.ts_, and connect to mongodb
