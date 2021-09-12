@@ -1,5 +1,6 @@
 ## Technologies used
 
+- TypeScript
 - NestJS
 - TypeORM
 - MongoDB
