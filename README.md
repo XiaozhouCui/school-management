@@ -1,4 +1,4 @@
-## Technologies
+## Technologies used
 
 - NestJS
 - TypeORM
